@@ -1,7 +1,7 @@
 
 import { Container, Row, Col, Button } from 'reactstrap';
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/Header/Header.js';
 import Hero from './components/Hero/Hero';
 import ServiceIcon1 from "./assets/images/service-icon-1.png";
 import ServiceIcon2 from "./assets/images/service-icon-2.png";

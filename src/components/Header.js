@@ -15,7 +15,7 @@ function Header() {
                     <Container>
                         <Navbar.Brand href={isLoggedIn?'/home':"/"}>
                             <img className="nav_icon pr-2" src={Nav_Icon} alt="" />
-                            Medic</Navbar.Brand>
+                            Medicbase</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ml-auto">

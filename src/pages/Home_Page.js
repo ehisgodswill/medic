@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { StateContext } from '../App';
-import Header from '../components/Header/Header';
+import Header from '../components/Header/Header.jsx';
 import Prescriptions from '../components/Prescriptions';
 import Sidebar from '../components/Sidebar/Sidebar';
 import '../Css/Home.css';

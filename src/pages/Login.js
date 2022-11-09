@@ -20,6 +20,7 @@ function Login() {
 		// 	if (result.id) {
                 // setUser(result);
 				// setMediData(result.data)
+				// alert('login successful')
                 setIsLoggedIn(true)
                 navigate('/home')
 		// 	}else console.log(result)
@@ -63,7 +64,7 @@ function Login() {
 							  onChange={(e) => setPassword(e.target.value)} />
 						</Form.Group>
 						<Form.Group>
-							<Form.Check type="checkbox" label="Remember Me!" />
+							<Form.Check type="checkbox" label=" &nbsp;Remember Me!" />
 						</Form.Group>
 						<div className="d-flex justify-content-center">
 							<Button className="mb-3"  type="submit" disabled={disb} >

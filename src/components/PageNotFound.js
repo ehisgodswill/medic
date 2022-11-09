@@ -5,7 +5,7 @@ import {NavLink, useNavigate} from 'react-router-dom'
 const PageNotFound = () => {
     const navigate = useNavigate()
     useEffect(()=>{
-        navigate('/404')
+        // navigate('/404')
     },[])
     const {isLoggedIn} = useContext(StateContext);
     return (

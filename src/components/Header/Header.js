@@ -1,6 +1,7 @@
 import "./Header.css";
 import { useRef, useEffect } from 'react';
 import { Container, Button } from 'reactstrap';
+import {useNavigate} from 'react-router-dom';
 
 const navLinks = [
     {
@@ -25,8 +26,7 @@ const navLinks = [
 ]
 
 const Header = (args) => {
-    // const [isOpen, setIsOpen] = useState(false);
-    // const toggle = () => setIsOpen(!isOpen);
+    const navigate = useNavigate()
 
     const headerRef = useRef(null);
     const menuRef = useRef(null);
@@ -56,7 +56,7 @@ const Header = (args) => {
                 <Container>
                     <div className="nav-wrapper">
                         <div className="logo">
-                            <h2>Medic.</h2>
+                            <h2>MedicBase.</h2>
                         </div>
 
 
@@ -80,8 +80,8 @@ const Header = (args) => {
 
 
                         <div className="nav-btns">
-                            <Button color="primary" outline className="btn-secondary">Log In</Button>
-                            <Button color="primary">Sign Up</Button>
+                            <Button color="primary"  className="btn-secondary" onClick={()=>navigate('/login')}>Log In</Button>
+                            <Button color="primary" onClick={()=>navigate('/signup')}>Sign Up</Button>
                             <span className="mobile-menu open" onClick={menuToggle}><i className="ri-menu-3-line"></i></span>
                         </div>
                     </div>

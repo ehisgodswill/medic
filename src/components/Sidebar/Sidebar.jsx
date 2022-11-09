@@ -38,7 +38,7 @@ const Sidebar = () => {
     <Fragment>
       {/* <img src={plant}></img> */}
       <nav id="sidebar">
-        <a className="sidebar--header" href="#">
+        <a className="sidebar--header" href="">
           <div className="siderbar-header__logo">
             <img className="sidebar--logo__icon" src={plant} />
           </div>
@@ -64,10 +64,10 @@ const Sidebar = () => {
                     <NavLink to="./add-record">Add Medical Record</NavLink>
                   </li>
                   <li>
-                    <NavLink to="./view-appointment">My Medical Records</NavLink>
+                    <NavLink to="./my-records">My Medical Records</NavLink>
                   </li>
                   <li>
-                    <NavLink to="./book-appointment">Family Medical Records</NavLink>
+                    <NavLink to="./family-records">Family Medical Records</NavLink>
                   </li>
                 </ul>
               </Accordion.Collapse>

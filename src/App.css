@@ -19,7 +19,7 @@
 .btn:hover, .btn:visited{
   background: transparent !important;
   border: thin solid var(--main-color) !important;
-  color: var(--main-color);
+  color: var(--main-color) !important;
 }
 
 .medical-showcase .showcase-grid{
